@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/nanya.ico" type="image/x-icon">
+  <title>Nanyasri Locherla's Profile</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌟 Nanyasri Locherla 🌟</h1>
+    <img src="images/Nanyasri_Locherla.jpg" alt="Portrait of Nanyasri Locherla smiling with a purple-themed background">
+
+    <div class="section">
+      <h2>🎂 About Me</h2>
+      <p><span class="highlight">Name:</span> Nanyasri Locherla</p>
+      <p><span class="highlight">Age:</span> <span id="age"></span> years old</p>
+      <p><span class="highlight">Date of Birth:</span> 01/06/2015</p>
+      <p><span class="highlight">Location:</span> 79-81 Lane street, Wentworthville, Sydney, NSW, Australia</p>
+      <p><span class="highlight">School:</span> Wentworthville Public School</p>
+    </div>
+
+    <div class="section">
+      <h2>🎨 My Interests</h2>
+      <ul>
+        <li>Reading</li>
+        <li>Researching about anything</li>
+        <li>Colouring / Drawing</li>
+        <li>Coding</li>
+        <li>Exploring new technologies every day</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>👨‍👩‍👧 Family & Friends</h2>
+      <p><span class="highlight">Family:</span> Yogananda Rao, Swetha, Reshma Sri</p>
+      <p><span class="highlight">Best Friends:</span> Sri, Aradhana, Vevektha, Aadhya, Ziya</p>
+    </div>
+
+    <div class="section">
+      <h2>🍔 My Favourites</h2>
+      <p><span class="highlight">Favourite Food:</span> Chicken Burger</p>
+      <p><span class="highlight">Favourite Colour:</span> Purple</p>
+      <p><span class="highlight">Favourite Font Family:</span> Comic Sans MS</p>
+      <p><span class="highlight">Favourite Place in my School:</span> Library</p>
+    </div>
+
+    <div class="section">
+      <h2>🛠️ My Works</h2>
+      <ul>
+        <li><a href="https://example.com/my-drawing" target="_blank">My Favourite Drawing</a></li>
+        <li><a href="https://example.com/my-code" target="_blank">Cool Code Project</a></li>
+        <li><a href="https://example.com/my-research" target="_blank">Fun Research I Did</a></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>📧 Contact Me</h2>
+      <p>Email: <a href="mailto:nanyasrilocherla@gmail.com">nanyasrilocherla@gmail.com</a></p>
+    </div>
+
+    <footer>
+      Made with 💜 by Nanyasri
+    </footer>
+  </div>
+
+  <script>
+    // Dynamic Age Calculation
+    const birthDate = new Date("2015-06-01");
+    const today = new Date();
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const hasBirthdayPassed = (today.getMonth() > birthDate.getMonth()) ||
+                              (today.getMonth() === birthDate.getMonth() && today.getDate() >= birthDate.getDate());
+    if (!hasBirthdayPassed) age--;
+
+    document.getElementById("age").textContent = age;
+  </script>
+</body>
+</html>
